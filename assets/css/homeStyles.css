@@ -30,6 +30,7 @@ a {
 	background-color: white;
 	height: 60px;
 	text-align: center;
+	z-index: 10;
 	box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 	-moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 	-webkit-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
@@ -54,15 +55,99 @@ p {
 
 #background-img {
 	margin-top: 60px;
-	width: 100%;
+	min-width: 100%;
+  min-height: 100%;
+	/*max-width: 100%;*/
 	height: calc(100% - 60px);
 	opacity: 0.8;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
 }
 
 .section {
 	width: 100%;
 	height: 500px;
 	position: relative;
+	/*padding-left: 150px;
+	padding-right: 150px;*/
+	text-align:center;
+}
+
+div.gallery {
+    /*margin: 5px;*/
+		display: inline-block;
+		margin: 30px;
+    border: 1px solid #ccc;
+    /*float: left;*/
+    width: 200px;
+		height: 200px;
+		position: relative;
+}
+/*
+div.gallery:hover {
+    border: 1px solid #777;
+}*/
+
+div.gallery img {
+    width: 100%;
+    vertical-align: top;
+}
+/*
+div.gallery:after {
+    content: '\A';
+    position: absolute;
+		z-index: 1;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgb(248,248,255, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+div.gallery:hover:after {
+    opacity: 1;
+}
+
+div.gallery:after {
+    content: attr(data-content);
+    color: #000;
+		top: 50%;
+		/*position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);*/
+/*}*/
+
+.gallery:after, .gallery:before {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.gallery:after {
+    content: '\A';
+    width: 100%; height:100%;
+    top: 0; left:0;
+    background:rgb(248,248,255, 0.9);
+		/*rgb(248,248,255, 0.9)*/
+		/*rgb(245,245,245, 0.9)*/
+		 	/*rgb(255,250,250, 0.9)*/
+}
+
+.gallery:before {
+    content: attr(data-content);
+    width: 100%;
+    color: #000;
+    z-index: 1;
+    text-align: center;
+		/*position: relative;*/
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+}
+
+.gallery:hover:after, .gallery:hover:before {
+    opacity: 1;
 }
 
 .text {
