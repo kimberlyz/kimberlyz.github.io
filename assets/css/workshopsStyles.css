@@ -133,6 +133,7 @@ a {
     border-radius: 50%;
     border: 1px solid #fff;
     -webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
 }
 
 /* Styling for the carousel next button */
@@ -148,6 +149,7 @@ a {
     border-radius: 50%;
     border: 1px solid #fff;
     -webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
 }
 
 /* Styling for the quotes and text in each section */
