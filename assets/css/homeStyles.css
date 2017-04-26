@@ -50,22 +50,33 @@ p {
 	color: red;
 }
 
+#main-background {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+
+}
+
 #background-img {
 	margin-top: 60px;
-	min-width: 100%;
-  min-height: 100%;
+	/*min-width: 100%;
+  min-height: 100%;*/
 	/*max-width: 100%;*/
 	height: calc(100% - 60px);
-	opacity: 0.8;
+	width: auto;
+	/*opacity: 0.8;*/
 	/* Set up proportionate scaling */
-	width: 100%;
-	height: auto;
+	/*height: 100%;*/
+	/*width: 100%;
+	height: auto;*/
 }
 
 .section {
 	width: 100%;
 	height: 500px;
 	position: relative;
+	padding-top: 25px;
 	/*padding-left: 150px;
 	padding-right: 150px;*/
 	text-align:center;
@@ -78,7 +89,9 @@ p {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	margin: 25px;
+	margin: 40px;
+	/*border: 1px solid;
+	border-color: rgb(169,169,169);*/
 }
 
 .image {
@@ -91,7 +104,7 @@ p {
   bottom: 100%;
   left: 0;
   right: 0;
-	background-color: rgb(248,248,255, 0.9);
+	background-color: rgb(248,248,255, 0.95);
   overflow: hidden;
   width: 100%;
   height:0;
@@ -113,6 +126,17 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.sub-text {
+	font-size: 16px;
+	white-space: normal;
+	/*bottom: 0;*/
+	margin-top: 15px;
+}
+
+#teams-section {
+	margin-bottom: 100px;
 }
 
 /* https://css-tricks.com/pointer-events-current-nav/ */
