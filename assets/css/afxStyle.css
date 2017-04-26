@@ -62,6 +62,11 @@
 	position: relative;
 }
 
+#description-section {
+	background-color: #fff;
+	height: 500px;
+}
+
 #name-section {
 	background-color: #2bde73;
 }
@@ -155,14 +160,26 @@ a {
 /* Styling for the quotes and text in each section */
 .text {
 	position: absolute;
-	font-size: 36px;
-	color: white;
+	font-size: 30px;
+	/*color: white;*/
 	font-weight: 700;
-    top: 50%;
+	margin-top: 40px;
+	color: #4B4B4B;
+    /*top: 50%;*/
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+    /*-webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
-   	transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);*/
+}
+
+.sub-text {
+	margin-top: 90px;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 160%;
 }
 
 /* jQuery Manipulation Classes */
@@ -181,7 +198,7 @@ a {
 /* https://css-tricks.com/pointer-events-current-nav/ */
 /* Disable link to current page*/
 
-#workshops-link:before {
+#teams-link:before {
 	pointer-events: none;
   visibility: visible;
 	-webkit-transform: scaleX(1);
